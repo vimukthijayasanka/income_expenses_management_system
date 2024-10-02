@@ -1,0 +1,97 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Set background with an image and center it */
+body {
+    background-image: url('../images/login.jpg'); /* Change the path if needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center container with round corners and shadow */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+    max-width: 350px; /* Set a max-width */
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add a hover effect for a nice interaction */
+.container:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), 
+                -10px -10px 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px); /* Lift the box slightly */
+}
+
+/* Style for the login heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6),
+    -5px -5px 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+/* Registration link */
+a {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #181a17;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,104 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../images/report_gen.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #333; /* Dark grey text color */
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #53a4f0;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels and inputs */
+label {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="date"] {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff; /* Focus effect */
+    outline: none;
+}
+
+/* Submit button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Hover elevation effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Click effect */
+}
+
+/* Align report section in the middle */
+.report-section {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.report-section p {
+    color: #666;
+}

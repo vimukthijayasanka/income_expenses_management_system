@@ -1,0 +1,132 @@
+/* Reset some basic elements */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/register.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 15px; /* Round corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.name-container, .contact-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between inputs */
+}
+
+.name-container input, .contact-container input, .contact-container select {
+    width: 48%; /* Nearly half width for input fields */
+    margin: 10px 0; /* Margin for spacing */ 
+}
+
+.contact-container .form-control {
+    margin: 10px 0; /* Margin for spacing */
+    padding: 8px; /* Padding inside input fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Round corners for input fields */
+    transition: border-color 0.3s; /* Transition effect on focus */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+/* Style for hints */
+.hint {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #1c78da; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Round corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+.link {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-container select {
+    padding: 10px; /* Padding inside the select field */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Round corners */
+}
+
+.successMessage {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.errorMessage {
+    display: none;
+    margin-top: 15px;
+    color: #dc3545;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #ffe6e6;
+    border: 1px solid #dc3545;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

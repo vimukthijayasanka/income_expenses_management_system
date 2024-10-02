@@ -1,0 +1,124 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../images/index.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #ffffff; /* Dark grey text color */
+}
+
+/* Container for the form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Welcome message styling */
+h1 {
+    font-size: 24px;
+    color: #f7f6f6;
+    margin-bottom: 10px;
+}
+
+/* Logout link */
+a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Form inputs */
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Focus effect */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Hover elevation effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Click effect */
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+/* Styling for the report generation link */
+a[href="report_gen.php"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[href="report_gen.php"]:hover {
+    background-color: #218838;
+}
